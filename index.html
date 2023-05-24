@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/0e604444e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Muskan's Portfolio</title>
+</head>
+<body>
+
+    <!-- Container of main website -->
+    <div class="wrapper" id="mainWebsite">
+        <header>
+            <div class="logoContainer">
+                <img src="images/mainLogo.png" alt="Portfolio logo">
+            </div>
+            <div class="navIcon hoverchange" id="mainMenuButton">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <main>
+            <div class="bodySection1" id="section1">
+                <div class="intro">
+                    <div class="mainLine">
+                        Bringing ideas into <span class="colorAnimate">physical world</span> is my calling.
+                    </div>
+                    <div class="profilePhoto">
+                        <img src="images/my_photo.jpg" alt="My Profile photo">
+                    </div>
+                </div>
+                <div class="myIntro anim-typewriter">
+                    <span class="myName">Hi, My name is <span class="name">Muskan Aggarwal</span>.</span>
+                    <span class="designation">I am a <span>Web/ Software/ Mobile Application Developer.</span> </span>
+                </div>
+                <div class="scroll-down hoverchange" id="scrollToNext">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="bodySection2" id="section2">
+                <div class="aboutHeading sectionHeading">
+                    <span class="bouncing-word">A</span><span class="bouncing-word">B</span><span class="bouncing-word">O</span><span class="bouncing-word">U</span><span class="bouncing-word">T</span> <span class="diffColor"><span class="bouncing-word">M</span><span class="bouncing-word">E</span></span>
+                </div>
+                <div class="aboutContent">
+                    Based in Toronto, Ontario, I am an IT professional with over <span class="year">3</span> years of industrial experience in designing and developing multiple websites and mobile applications. Believing the fact, that there is always a room for learning, I came to Canada to pursue post-graduate certification in WEB DEVELOPMENT. <br><br>Moreover, you can find my work over the course of my educational and professional years, <a href="#section4" class="hereLink">here</a>.
+                </div>
+                <div class="moreButton"><button id="clickMoreForAbout" class="hoverchange">View More</button></div>
+            </div>
+            <div class="bodySection3" id="section3">
+                <div class="skillHeading sectionHeading">
+                    <span class="bouncing-word">S</span><span class="bouncing-word">K</span><span class="bouncing-word">I</span><span class="bouncing-word">L</span><span class="bouncing-word">L</span><span class="diffColor"><span class="bouncing-word">S</span><span class="bouncing-word">E</span><span class="bouncing-word">T</span></span>
+                </div>
+                <div class="skillContent">
+                    <div class="aboutSkills">
+                        Since beginning, I have always been captivated by the wonders of coding and development and after utilizing the opportunities during my <span class="firstSpan">work and educational experience</span>, I was able to successfully build a knowledge base and skillset to turn the ideas into real life products for both business and customer use, efficiently with best-practices.<br><br>
+                        The main area of my expertise is <span class="secondSpan">front-end</span> and <span class="secondSpan">mobile-application development</span>.
+                    </div>
+                    <div class="meterBar">
+                        <div class="fieldBar fedFieldBar">
+                            <div class="barTitle">Front-end Development</div>
+                            <div class="barMeter"><div class="filledPart"></div></div>
+                        </div>
+                        <div class="fieldBar madFieldBar">
+                            <div class="barTitle">Mobile Application Development</div>
+                            <div class="barMeter"><div class="filledPart"></div></div>
+                        </div>
+                        <div class="fieldBar bedFieldBar">
+                            <div class="barTitle">Back-end Development</div>
+                            <div class="barMeter"><div class="filledPart"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="allSkillsContainer" id="mainSkillsBox">
+                    <div class="skillsImages">
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/angular.png" alt="Angular">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Angular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/react.png" alt="React">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>React</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/nextjs.png" alt="NextJS">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>NextJS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/node.png" alt="Node">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Node</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/html.png" alt="HTML">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/css.png" alt="CSS">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/js.png" alt="JavaScript">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/ts.png" alt="TypeScript">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>typescript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/flutter.png" alt="Flutter">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Flutter</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/bootstrap.png" alt="Bootstrap">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/android.jpg" alt="Android Development">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>android development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/dart.png" alt="Dart">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Dart</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/ios.png" alt="IOS Development">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>ios development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/adobexd.png" alt="AdobeXD">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>adobexd</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/figma.webp" alt="Figma">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/c.png" alt="C">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>c</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/cpp.png" alt="C++">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>C++</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/csharp.png" alt="C#">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>C-Sharp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/aspnet.png" alt="ASP.NET">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>asp.net</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/sql.png" alt="SQL">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>sql</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/mysql.png" alt="MYsql">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>mysql</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/mongodb.png" alt="MongoDB">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>mongodb</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/hive.webp" alt="Hive Database">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>hive database</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/jquery.webp" alt="JQuery">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>jquery</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/sass.png" alt="SASS">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Syntactially Awesome Stylesheet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/vs.png" alt="Visual Studio">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>visual studio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/vsc.png" alt="Visual Studio Code">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>visual studio code</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/git.png" alt="Git">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>git</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/github.png" alt="Github">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>github</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/jira.png" alt="Jira">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>jira</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsRow">
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/jasmine.png" alt="Jasmine">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Jasmine</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/cypress.png" alt="Cypress">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Cypress</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/php.png" alt="PHP">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>PHP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/linux.png" alt="Linux">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/microsoft.png" alt="Microsoft Suite">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>Microsoft Suite</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgContainer">
+                                <div class="flipImage">
+                                    <div class="mainImg">
+                                        <img src="images/postman.svg" alt="Postman">
+                                    </div>
+                                    <div class="imgDesc">
+                                        <span>postman</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewMoreSkills" id="viewSkillsButton">
+                        <div class="scroll-down hoverchange" id="viewSkills">
+                            <i id="upDownArrow" class="fa-solid fa-chevron-down"></i>
+                            <span id="viewAllText">View All</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bodySection4" id="section4">
+                <div class="projectHeading sectionHeading">
+                    <span class="bouncing-word">P</span><span class="bouncing-word">R</span><span class="bouncing-word">O</span><span class="bouncing-word">J</span><span class="diffColor"><span class="bouncing-word">E</span><span class="bouncing-word">C</span><span class="bouncing-word">T</span><span class="bouncing-word">S</span></span>
+                </div>
+                <div class="projectsContent">
+                    I worked on several professional live projects working on multiple technologies and frameworks during the course of my work period. Below are the reflections of some of the projects that included my major contributions.
+                </div>
+                <div class="profProjects">
+                    <div class="projectContainer project1">
+                        <div class="projectDesc">
+                            <span class="projectName">EQUIST - Equitable Impact Sensitive Tool (UNICEF)</span>
+                            <span class="projectDets">UNICEF has designed and developed EQUIST as an analytical platform with free online access to facilitate decision makers' development of equitable strategies in order to improve health and nutrition of the women and children in most vulnerable situations. It incorporates the functionality of Lives Saved Tool (LiST) in its back-end to model lives saved and uses data and principles from the Marginal Budgeting for Bottlenecks (MBB) tool for its costing component.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject1" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project2">
+                        <div class="projectDesc">
+                            <span class="projectName">SAFER ROADS (City Intervention In India)</span>
+                            <span class="projectDets">An industry-wide, cooperative project called Safer Roads for Gurugram (SRFG) is being led by AB InBev (Anheuser-Busch InBev) as the organising body. The initiative's main goal is to make Gurugram's roadways safer through data-driven initiatives and constructive behavioural change. It enables dedicated groups to support the development, implementation, monitoring, and evaluation of various road safety projects through a public-private collaboration. The initiative will adopt a dual-pronged strategy, concentrating on both bolstering the current procedures and systems and assisting in the creation & implementation of distinctive and new solutions.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject2" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project3">
+                        <div class="projectDesc">
+                            <span class="projectName">UN INFO (UNDP)</span>
+                            <span class="projectDets">It is an online planning, monitoring and reporting system that digitizes each UNDAF/UNSDCF and the Joint work plans that go with them. The UN development system's efforts to increase coherence, openness, and accountability are reflected in this, which will allow it to better meet the needs and priorities of Member States. UN INFO, which was first designed and created at the national level, gives an overview of how the UN development system in each nation is allocating resources to national priorities, thematic sectors (such as those that cut across gender, human rights, and humanitarian criteria), and the SDGs.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject3" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project4">
+                        <div class="projectDesc">
+                            <span class="projectName">A.P.S.H.W.P (Mobile Application)</span>
+                            <span class="projectDets">The School Health and Wellness Programme (SHWP) was propelled on 24 February, 2021 by the State Council of Educational Research and Training (SCERT), Andhra Pradesh (AP), in near collaboration with Department of Health and Family Welfare (DHFW), Government of AP, and with specialized help from United Nations Children’s Fund (UNICEF). The SHP programme has been rolled out during a challenging period amidst the COVID-19 pandemic and has successfully implemented teachings through the use of various modules and resources and with the help of quizzes and polling, the children activities were continuously tracked.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject4" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project5">
+                        <div class="projectDesc">
+                            <span class="projectName">GBVIMS (Mobile Application)</span>
+                            <span class="projectDets">Police Management System specifically designed and developed to register crimes and FIR and track a record of the cases and survivors. It helps in monitoring the cases and reports registered and referred by and to the officers to thoroughly navigate through the crime rates and successfully case closing rates.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject5" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectsContent">
+                    I also have worked on some personal projects during my education years. Below is the reflection of my work or you can also find my work <a href="https://github.com/muskan251027" target="_blank" class="hereLink">here</a>.
+                </div>
+                <div class="profProjects">
+                    <div class="projectContainer project6">
+                        <div class="projectDesc">
+                            <span class="projectName">MovieSearch</span>
+                            <span class="projectDets">This is a platform based on Node.js which allows the user to search movies based on the list of selected genres and entered title. The user is given a list of genres and they can select multiple in order to search the movies. Also, the user will be required to give some title in order to retrieve a list of movies. There are two public apis that have been used in this project - <a href="https://rapidapi.com/gox-ai-gox-ai-default/api/ott-details" target="_blank" class="hereLink">OTT DETAILS API</a>(to get the list of movies) and <a href="https://developers.giphy.com/explorer/" target="_blank" class="hereLink">GIPHY API</a>(to get stickers for user interface for the list of genres)</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject6" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project7">
+                        <div class="projectDesc">
+                            <span class="projectName">Say Cheese</span>
+                            <span class="projectDets">A game made in HTML, CSS and JS to make the rat escape all obstacles in its way to reach cheese. There is a set of rules that need to be followed in this game in order to win - 
+                                <ul>
+                                    <li>The player (rat) needs to reach cheese in order to win the game.</li>
+                                    <li>Use arrow keys to move the player.</li>
+                                    <li>The moving bells are obstacles and the player has to avoid them to prevent losing a life.</li>
+                                    <li>The player has got three lives to win the game.</li>
+                                    <li>Every time the player touches the bell, it loses a life.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject7" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="projectContainer project8">
+                        <div class="projectDesc">
+                            <span class="projectName">FRIDGETERIA (Your own custom refrigerator)</span>
+                            <span class="projectDets">This is basically a customized refrigerator based on JQuery, JS, HTML and CSS which gives recipe suggestions according to the ingredients added to refrigerator. The list of features include - You need to submit user details before entering, like your name and the name you want to call your fridge with (just for fun). After successful validation of your form, click continue and it will take you to the first page. First page has all the ingredients list that user can select from to add items in fridge. User can add or remove items according to them. Clicking on Proceed will take you to the second page, which basically displays your final ingredient list. On second page, clicking edit button will take you back to ingredient selection part and suggest recipies will take you to next slide - suggestions. Final slide, it will display the suggestions according to your selected ingrdients. Press Back on Last slide takes the user back to last page. Switching between radio buttons list items help user to categroize recipes between food or beverage or all.</span>
+                        </div>
+                        <div class="viewMoreProject">
+                            <div class="moreButton"><button id="clickForProject8" class="hoverchange">View More</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            &copy;Copyright 2023, Muskan Aggarwal.
+        </footer>
+    </div>
+
+    <!-- Main menu of website -->
+    <div class="menuWrapper" id="mainMenuWebsite">
+        <div class="menuHeader">
+            <div class="close">
+                <div class="navIcon hoverchange" id="closeMainMenu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="logoContainer">
+                <img src="images/mainLogo.png" alt="Portfolio logo">
+            </div>
+            <div class="mediaContainer">
+                <div class="hoverchange resumeDownload">
+                    <i class="fa-solid fa-download"></i>
+                    <span class="tooltiptext">Download Resume</span>
+                </div>
+                <div class="hoverchange mailOpen">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="tooltiptext">Send Mail</span>
+                </div>
+                <div class="hoverchange linkedInOpen">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span class="tooltiptext" style="width: 80px;margin-left: -50px;">Open LinkedIn</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="bouncing-word" href="/">HOME</a></li>
+                <li><a class="bouncing-word" href="/">ABOUT ME</a></li>
+                <li><a class="bouncing-word" href="/">SKILLS</a></li>
+                <li><a class="bouncing-word" href="/">PROJECTS</a></li>
+                <!-- <li><a class="bouncing-word" href="/">INTERESTS</a></li> -->
+                <li><a class="bouncing-word" href="/">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Modal pop ups for the portfolio website -->
+    <!-- MODAL FOR VIEW MORE ABOUT ME POP UP -->
+    <div id="moreAboutModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeAbout">&times;</span>
+
+            <div class="modalContentForAbout">
+                <div class="educationEx exp">
+                    <div class="exHead">EDUCATION</div>
+                    <div class="educationDets">
+                        <div class="eduDetsBox">
+                            <div class="institutionName">Humber College, ON, Canada</div>
+                            <div class="degreeName">Post graduation in Web Development</div>
+                            <div class="score">Scored an aggregate of 91.05</div>
+                        </div>
+                        <div class="eduDetsBox">
+                            <div class="institutionName">Guru Gobind Singh Indraprastha University, Delhi, India</div>
+                            <div class="degreeName">Bachelor of Technology in Information Technology</div>
+                            <div class="score">Scored an aggregate of 84.2%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workEx exp">
+                    <div class="exHead">WORK</div>
+                    <div class="educationDets">
+                        <div class="eduDetsBox">
+                            <div class="institutionName">Avalon Information Systems Pvt. Ltd., Delhi, India</div>
+                            <div class="degreeName">Software Engineer</div>
+                            <div class="score">Jan 2020 - Sept 2022</div>
+                        </div>
+                        <div class="eduDetsBox">
+                            <div class="institutionName">Amorfos Enterprises, Delhi, India</div>
+                            <div class="degreeName">Web Developer Intern</div>
+                            <div class="score">Aug 2019 - Sep 2019</div>
+                        </div>
+                        <div class="eduDetsBox">
+                            <div class="institutionName">Virtuosos Solutions Pvt. Ltd., Delhi, India</div>
+                            <div class="degreeName">PHP Developer Intern</div>
+                            <div class="score">Jul 2019 - Aug 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 1 POP UP -->
+    <div id="project1Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject1">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>EQUIST - Equitable Impact Sensitive Tool (UNICEF)</h1>
+                <div class="projImageCont">
+                    <img src="images/project1.png" alt="EQUIST UNICEF">
+                </div>
+                <div class="projDescCont">
+                    UNICEF has designed and developed EQUIST as an analytical platform with free online access to facilitate decision makers' development of equitable strategies in order to improve health and nutrition of the women and children in most vulnerable situations. It incorporates the functionality of Lives Saved Tool (LiST) in its back-end to model lives saved and uses data and principles from the Marginal Budgeting for Bottlenecks (MBB) tool for its costing component.
+                </div>
+                <div class="urlCont">
+                    URL - <a target="_blank" href="https://equist.info/#/" class="hereLink">https://equist.info/#/</a>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 2 POP UP -->
+    <div id="project2Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject2">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>SAFER ROADS (City Intervention In India)</h1>
+                <div class="projImageCont">
+                    <img src="images/project3.png" alt="Saferroads City Intervention in India">
+                </div>
+                <div class="projDescCont">
+                    An industry-wide, cooperative project called Safer Roads for Gurugram (SRFG) is being led by AB InBev (Anheuser-Busch InBev) as the organising body. The initiative's main goal is to make Gurugram's roadways safer through data-driven initiatives and constructive behavioural change. It enables dedicated groups to support the development, implementation, monitoring, and evaluation of various road safety projects through a public-private collaboration. The initiative will adopt a dual-pronged strategy, concentrating on both bolstering the current procedures and systems and assisting in the creation & implementation of distinctive and new solutions.
+                </div>
+                <div class="urlCont">
+                    URL - <a target="_blank" href="https://saferroads.in/" class="hereLink">https://saferroads.in/</a>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 3 POP UP -->
+    <div id="project3Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject3">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>UN INFO (UNDP)</h1>
+                <div class="projImageCont">
+                    <img src="images/project2.png" alt="UN INFO dashboard">
+                </div>
+                <div class="projDescCont">
+                    It is an online planning, monitoring and reporting system that digitizes each UNDAF/UNSDCF and the Joint work plans that go with them. The UN development system's efforts to increase coherence, openness, and accountability are reflected in this, which will allow it to better meet the needs and priorities of Member States. UN INFO, which was first designed and created at the national level, gives an overview of how the UN development system in each nation is allocating resources to national priorities, thematic sectors (such as those that cut across gender, human rights, and humanitarian criteria), and the SDGs.
+                </div>
+                <div class="urlCont">
+                    URL - <a target="_blank" href="https://uninfo.org/" class="hereLink">https://uninfo.org/</a>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 4 POP UP -->
+    <div id="project4Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject4">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>A.P.S.H.W.P (Mobile Application)</h1>
+                <div class="projImageCont">
+                    <img src="images/project4.jpeg" alt="APSHWP PROJECT">
+                </div>
+                <div class="projDescCont">
+                    The School Health and Wellness Programme (SHWP) was propelled on 24 February, 2021 by the State Council of Educational Research and Training (SCERT), Andhra Pradesh (AP), in near collaboration with Department of Health and Family Welfare (DHFW), Government of AP, and with specialized help from United Nations Children’s Fund (UNICEF). The SHP programme has been rolled out during a challenging period amidst the COVID-19 pandemic and has successfully implemented teachings through the use of various modules and resources and with the help of quizzes and polling, the children activities were continuously tracked.
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 5 POP UP -->
+    <div id="project5Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject5">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>GBVIMS (Mobile Application)</h1>
+                <div class="projImageCont">
+                    <img src="images/project5.jpeg" alt="GBVIMS PROJECT">
+                </div>
+                <div class="projDescCont">
+                    Police Management System specifically designed and developed to register crimes and FIR and track a record of the cases and survivors. It helps in monitoring the cases and reports registered and referred by and to the officers to thoroughly navigate through the crime rates and successfully case closing rates.
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 6 POP UP -->
+    <div id="project6Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject6">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>MovieSearch</h1>
+                <div class="projImageCont">
+                    <img src="images/project6.png" alt="Movie Search Platform">
+                </div>
+                <div class="projDescCont">
+                    This is a platform based on Node.js which allows the user to search movies based on the list of selected genres and entered title. The user is given a list of genres and they can select multiple in order to search the movies. Also, the user will be required to give some title in order to retrieve a list of movies. There are two public apis that have been used in this project - <a href="https://rapidapi.com/gox-ai-gox-ai-default/api/ott-details" target="_blank" class="hereLink">OTT DETAILS API</a>(to get the list of movies) and <a href="https://developers.giphy.com/explorer/" target="_blank" class="hereLink">GIPHY API</a>(to get stickers for user interface for the list of genres)
+                </div>
+                <!-- <div class="urlCont">
+                    URL - <a target="_blank" href="https://uninfo.org/" class="hereLink">https://uninfo.org/</a>
+                </div> -->
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 7 POP UP -->
+    <div id="project7Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject7">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>Say Cheese</h1>
+                <div class="projImageCont">
+                    <img src="images/project7.png" alt="Movie Search Platform">
+                </div>
+                <div class="projDescCont">
+                    A game made in HTML, CSS and JS to make the rat escape all obstacles in its way to reach cheese. There is a set of rules that need to be followed in this game in order to win - 
+                    <ul>
+                        <li>The player (rat) needs to reach cheese in order to win the game.</li>
+                        <li>Use arrow keys to move the player.</li>
+                        <li>The moving bells are obstacles and the player has to avoid them to prevent losing a life.</li>
+                        <li>The player has got three lives to win the game.</li>
+                        <li>Every time the player touches the bell, it loses a life.</li>
+                    </ul>
+                </div>
+                <div class="urlCont">
+                    URL - <a target="_blank" href="https://say-cheese-game.netlify.app/" class="hereLink">https://say-cheese-game.netlify.app/</a>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- MODAL FOR VIEW MORE PROJECT 8 POP UP -->
+    <div id="project8Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" id="closeProject8">&times;</span>
+
+            <div class="modalContentForProject">
+                <h1>FRIDGETERIA (Your own custom refrigerator)</h1>
+                <div class="projImageCont">
+                    <img src="images/project8.png" alt="Fridgeteria">
+                </div>
+                <div class="projDescCont">
+                    This is basically a customized refrigerator based on JQuery, JS, HTML and CSS which gives recipe suggestions according to the ingredients added to refrigerator. The list of features include - You need to submit user details before entering, like your name and the name you want to call your fridge with (just for fun). After successful validation of your form, click continue and it will take you to the first page. First page has all the ingredients list that user can select from to add items in fridge. User can add or remove items according to them. Clicking on Proceed will take you to the second page, which basically displays your final ingredient list. On second page, clicking edit button will take you back to ingredient selection part and suggest recipies will take you to next slide - suggestions. Final slide, it will display the suggestions according to your selected ingrdients. Press Back on Last slide takes the user back to last page. Switching between radio buttons list items help user to categroize recipes between food or beverage or all.
+                </div>
+                <div class="urlCont">
+                    URL - <a target="_blank" href="https://fridgeteria.netlify.app/" class="hereLink">https://fridgeteria.netlify.app/</a>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+</body>
+</html>
