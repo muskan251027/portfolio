@@ -94,6 +94,7 @@ header {
 .menuHeader .mediaContainer {
     color: #DFE0E2;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: end;
     /* flex-wrap: wrap; */
@@ -175,12 +176,12 @@ header {
 /* Tooltip text */
 .tooltiptext {
     visibility: hidden;
-    width: 150px;
+    max-width: 150px;
     background-color: #23B5D3;
     color: #071013;
     text-align: center;
     border-radius: 5px;
-    padding: 6px 2px;
+    padding: 6px 10px;
     position: absolute;
     z-index: 1;
     bottom: 130%;
@@ -388,6 +389,7 @@ main {
     font-weight: 400;
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
     column-gap: 60px;
     padding: 0 100px;
 }
@@ -533,7 +535,7 @@ main {
     font-weight: 700;
     font-family: 'Quicksand';
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 20px;
     border-radius: 3px;
     cursor: pointer;
     text-align: center;
@@ -544,6 +546,7 @@ main {
 .imgContainer .imgDesc span {
     position: relative;
     top: 40%;
+    line-break: anywhere;
 }
 
 /* CSS for body section 4 */
@@ -561,6 +564,7 @@ main {
 /* professional projects containers css */
 .profProjects {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -674,9 +678,12 @@ main {
 }
 .contactList {
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-evenly;
     margin-top: 50px;
+    background: linear-gradient(45deg, black, transparent);
+    padding: 50px 0px;
 }
 .contactList .contactCont {
     padding: 50px;
@@ -736,7 +743,8 @@ main {
 /* CSS for more about MODAL */
 .modalContentForAbout {
     display: flex;
-    column-gap: 20px;
+    flex-direction: row;
+    gap: 20px;
     height: 100%;
 }
 .modalContentForAbout .exp {
@@ -847,4 +855,291 @@ footer {
     font-size: 13px;
     color: #DFE0E2;
     text-align: center;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media only screen and (max-width: 1260px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 58%;}
+    }
+}
+@media only screen and (max-width: 1200px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 60%;}
+    }
+}
+@media only screen and (max-width: 1160px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 65%;}
+    }
+}
+@media only screen and (max-width: 1077px) {
+    .bodySection1 .intro .mainLine {
+        font-size: 53px;
+    }
+    .bodySection1 .myIntro {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 70%;}
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .profProjects .projectContainer {
+        width: 45%;
+    }
+    .contactList .contactCont {
+        padding: 40px;
+    }
+    .contactList .contactCont i {
+        font-size: 40px;
+    }
+    .bodySection1 .intro .profilePhoto {
+        width: 0%;
+    }
+    .bodySection1 .intro {
+        column-gap: 0px;
+    }
+    .bodySection1 .myIntro {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .imgContainer .imgDesc {
+        font-size: 14px;
+    }
+    .imgContainer .imgDesc span {
+        top: 20%;
+    }
+    .profProjects {
+        gap: 15px;
+    }
+    .modal-content {
+        padding: 20px;
+        width: 70%;
+    }
+    .bodySection1 .intro .mainLine {
+        font-size: 45px;
+    }
+    .bodySection1 .intro {
+        padding: 35px 100px 0px 100px;
+    }
+    .bodySection1 .myIntro {
+        margin: 70px 100px 50px 100px;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 75%;}
+    }
+}
+@media only screen and (max-width: 800px) {
+    .bodySection1 .myIntro {
+        font-size: 19px;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 80%;}
+    }
+}
+@media only screen and (max-width: 732px) {
+    @keyframes typewriter{
+        from{width: 0; white-space: nowrap;}
+        to{width: 80%; white-space: normal;}
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    /* For main menu of portfolio */
+    .menuHeader .logoContainer {
+        height: 70px;
+        align-self: center;
+    }
+    .menuHeader .mediaContainer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .menuHeader .mediaContainer div {
+        padding: 7px 10px;
+    }
+    .menuHeader .mediaContainer div i {
+        font-size: 15px;
+    }
+    .tooltiptext {
+        max-width: 60px;
+        bottom: 5%;
+        left: -20%;
+        font-size: 10px;
+    }
+    .tooltiptext::after {
+        top: 40%;
+        left: 106%;
+        border-color: transparent transparent transparent #75abbc;
+    }
+    .menuWrapper nav ul li a {
+        font-size: 15px;
+    }
+
+    /* For header */
+    header {
+        padding: 20px 45px;
+    }
+    .logoContainer {
+        height: 75px;
+    }
+    .navIcon div {
+        width: 18px;
+        border: 1px solid #DFE0E2;
+    }
+
+    /* For bodysections */
+    .bodySection2 {
+        padding: 30px 75px 60px 75px;
+    }
+    .bodySection2 .sectionHeading, .bodySection3 .sectionHeading, .bodySection4 .sectionHeading, .bodySection5 .sectionHeading {
+        font-size: 45px;
+    }
+    .bodySection2 .aboutContent {
+        font-size: 16px;
+    }
+    .bodySection2 .aboutContent .year {
+        font-size: 50px;
+    }
+    .bodySection2 .moreButton button {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .bodySection3 .skillHeading {
+        padding: 0 75px;
+    }
+    .bodySection3 .skillContent {
+        font-size: 16px;
+        margin-top: 25px;
+        row-gap: 30px;
+        padding: 0 75px;
+        flex-direction: column;
+    }
+    .bodySection3 .skillContent .aboutSkills {
+        width: 100%;
+    }
+    .bodySection3 .skillContent .aboutSkills .secondSpan {
+        font-size: 20px;
+    }
+    .bodySection3 .skillContent .meterBar {
+        width: 100%;
+    }
+    .bodySection3 .skillContent .meterBar .fieldBar .barTitle {
+        font-size: 16px;
+    }
+    .allSkillsContainer {
+        max-height: 220px;
+    }
+    .allSkillsContainerChange {
+        max-height: 100%;
+    }
+    .viewMoreSkills {
+        bottom: -15px;
+        padding: 0px 0px 15px 0px;     
+    }
+    .skillsImages {
+        margin: 0px 0px 45px 0px;
+        row-gap: 15px;
+    }
+    .skillsRow {
+        column-gap: 15px;
+    }
+    .imgContainer:hover .flipImage {
+        transform: none;
+    }
+
+    .bodySection4 {
+        padding: 30px 75px 30px 75px;
+    }
+    .bodySection4 .projectsContent {
+        font-size: 16px;
+    }
+    .profProjects {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profProjects .projectContainer {
+        width: 100%;
+    }
+    .profProjects .projectContainer .projectDesc {
+        font-size: 12px;
+        left: 10px;
+        right: 10px;
+    }
+    .profProjects .projectContainer .projectDesc .projectName {
+        font-size: 13px;
+    }
+    .profProjects .projectContainer .projectDesc .projectDets {
+        -webkit-line-clamp: 3;
+    }
+    .bodySection5 {
+        padding: 0px 75px 50px 75px;
+    }
+    .modalContentForAbout {
+        flex-direction: column;
+    }
+    .modalContentForAbout .exp .exHead {
+        font-size: 30px;
+    }
+    .institutionName {
+        font-size: 16px;
+    }
+    .score {
+        font-size: 14px;
+    }
+    .modalContentForProject .projDescCont {
+        font-size: 16px;
+    }
+    .modalContentForProject .urlCont {
+        font-size: 17px;
+    }
+    .bodySection1 .intro .mainLine {
+        font-size: 40px;
+    }
+    .bodySection1 .intro {
+        padding: 35px 75px 0px 75px;
+    }
+    .bodySection1 .myIntro {
+        margin: 70px 75px 50px 75px;
+        font-size: 17px;
+    }
+
+}
+@media only screen and (max-width: 510px) {
+    .bodySection1 .myIntro {
+        font-size: 15px;
+    }
+    @keyframes typewriter{
+        from{width: 0; white-space: nowrap;}
+        to{width: 75%; white-space: normal;}
+    }
+}
+@media only screen and (max-width: 479px) {
+    .bodySection1 .myIntro {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 417px) {
+    @keyframes typewriter{
+        from{width: 0; white-space: nowrap;}
+        to{width: 70%; white-space: normal;}
+    }
+}
+@media only screen and (max-width: 360px) {
+    .menuHeader div {
+        flex: auto;
+    }
+    .logoContainer {
+        height: 60px;
+    }
 }
