@@ -191,4 +191,17 @@ function pageLoad() {
 
     // VIEW MORE ABOUT POP UP FUNCTIONALITY--------------END
 
+    // VIEW MORE project9 FUNCTIONALITY--------------START
+
+    document.getElementById("clickForProject9").onclick = function() {
+        document.getElementById("project9Modal").style.display = "block";
+    }
+
+    // When the user clicks on(x), close the modal
+    document.getElementById("closeProject9").onclick = function() {
+        document.getElementById("project9Modal").style.display = "none";
+    }
+
+    // VIEW MORE ABOUT POP UP FUNCTIONALITY--------------END
+
 }
