@@ -26,6 +26,12 @@ function pageLoad() {
     }
     // OPENING AND CLOSING OF MENU FUNCTIONALITY--------------END
 
+    document.getElementById("menuOption1").onclick = closeMainMenu;
+    document.getElementById("menuOption2").onclick = closeMainMenu;
+    document.getElementById("menuOption3").onclick = closeMainMenu;
+    document.getElementById("menuOption4").onclick = closeMainMenu;
+    document.getElementById("menuOption5").onclick = closeMainMenu;
+
     // BOUNCING WORD FUNCTIONALITY--------------START
     document.querySelectorAll(".bouncing-word").forEach((element) => {
         element.addEventListener("mouseover", (e) => bounce(e.target));
@@ -203,5 +209,29 @@ function pageLoad() {
     }
 
     // VIEW MORE ABOUT POP UP FUNCTIONALITY--------------END
+
+    // DOWNLOAD PDF
+    document.getElementById("openPdf").onclick = openPdf;
+    function openPdf() {
+        window.open("docs/MuskanAggarwalResume.pdf", '_blank');
+    }
+    // OPEN LINKEDIN
+    document.getElementById("openLinkedIn").onclick = openLin;
+    function openLin() {
+        window.open("https://www.linkedin.com/in/muskan-25-aggarwal/", '_blank');
+    }
+    // OPEN EMAIL
+    document.getElementById("openEmail").onclick = openGmail;
+    function openGmail() {
+
+        const recipientEmail = 'muskan.10151@gmail.com';
+        const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}`;
+        window.open(gmailComposeURL, '_blank');
+    }
+    // OPEN LINKEDIN
+    document.getElementById("openGithub").onclick = openGithub;
+    function openGithub() {
+        window.open("https://github.com/muskan251027", '_blank');
+    }
 
 }
