@@ -240,7 +240,7 @@ main {
     letter-spacing: 2px;
     font-family: 'Quicksand';
 }
-.bodySection1 .intro .mainLine .colorAnimate {
+.colorAnimate {
     background: linear-gradient(-45deg,#d9f801, #e95417, #f8f801, #e95617);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -717,12 +717,13 @@ main {
     background-color: rgba(0, 0, 0, 0.616);
 }
 .modal-content {
-    background-color: #fefefe;
+    background: linear-gradient(180deg,#071013, #23B5D3);
+    color: white;
     margin: auto;
     padding: 40px;
-    border: 1px solid #888;
+    border: 2px solid #888;
     width: 60%;
-    max-height: 60%;
+    max-height: 65%;
     overflow: auto;
     position: relative;
 }
@@ -748,12 +749,13 @@ main {
     height: 100%;
 }
 .modalContentForAbout .exp {
-    background-size: cover;
-    background-position: center;
+    width: 50%;
 }
 .modalContentForAbout .exp .exHead {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 800;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
 }
 .modalContentForAbout .exp .educationDets {
     display: flex;
@@ -768,31 +770,33 @@ main {
 .institutionName {
     font-weight: 600;
     font-size: 18px;
+    background: linear-gradient(45deg, #071013, transparent);
+    padding: 8px;
 }
 .degreeName {
     font-style: italic;
     font-size: 12px;
     font-weight: 900;
+    margin-top: 5px;
 }
 .score {
     margin-top: 10px;
     font-size: 15px;
     font-weight: 500;
-    text-decoration: underline;
 }
-.educationEx {
+/* .educationEx {
     background: linear-gradient(#ffffff79, #ffffff79), url(images/education.png);
 }
 .workEx {
     background: linear-gradient(#ffffff79, #ffffff79), url(images/work.png);
-}
+} */
 
 /* CSS for project Modals */
 .modalContentForProject {
     text-align: center;
 }
 .modalContentForProject h1 {
-
+    font-family: 'Poppins';
 }
 .modalContentForProject .projImageCont {
 
@@ -811,10 +815,8 @@ main {
 .modalContentForProject .urlCont {
     font-weight: 900;
     font-size: 22px;
-}
-.modalContentForProject .urlCont a {
-    color: blue;
-    text-decoration: none;
+    background: linear-gradient(45deg, #071013, transparent);
+    padding: 10px;
 }
 
 /* CSS animation for bouncing text */
@@ -858,6 +860,22 @@ footer {
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
+@media only screen and (min-width: 1470px) {
+    .bodySection1 .intro .mainLine {
+        font-size: 65px;
+    }
+    .bodySection1 .myIntro {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1560px) {
+    .bodySection1 .intro .mainLine {
+        font-size: 70px;
+    }
+    .bodySection1 .myIntro {
+        font-size: 28px;
+    }
+}
 @media only screen and (max-width: 1260px) {
     @keyframes typewriter{
         from{width: 0;}
@@ -865,6 +883,9 @@ footer {
     }
 }
 @media only screen and (max-width: 1200px) {
+    .bodySection1 .intro .mainLine {
+        font-size: 50px;
+    }
     @keyframes typewriter{
         from{width: 0;}
         to{width: 60%;}
@@ -878,7 +899,7 @@ footer {
 }
 @media only screen and (max-width: 1077px) {
     .bodySection1 .intro .mainLine {
-        font-size: 53px;
+        font-size: 43px;
     }
     .bodySection1 .myIntro {
         font-size: 22px;
@@ -932,6 +953,12 @@ footer {
     }
     .bodySection1 .myIntro {
         margin: 70px 100px 50px 100px;
+    }
+    .modalContentForAbout {
+        flex-direction: column;
+    }
+    .modalContentForAbout .exp {
+        width: 100%;
     }
     @keyframes typewriter{
         from{width: 0;}

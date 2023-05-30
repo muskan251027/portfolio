@@ -55,7 +55,7 @@ function pageLoad() {
     function scrollDownSmooth() {
         document.querySelector('#section2').scrollIntoView({
             behavior: 'smooth',
-            block: 'end'
+            block: 'start'
         }, 1000);
     }
     // SCROLL DOWN FUNCTIONALITY--------------END
