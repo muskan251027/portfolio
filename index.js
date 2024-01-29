@@ -210,6 +210,19 @@ function pageLoad() {
 
     // VIEW MORE ABOUT POP UP FUNCTIONALITY--------------END
 
+    // VIEW MORE project10 FUNCTIONALITY--------------START
+
+    document.getElementById("clickForProject10").onclick = function() {
+        document.getElementById("project10Modal").style.display = "block";
+    }
+
+    // When the user clicks on(x), close the modal
+    document.getElementById("closeProject10").onclick = function() {
+        document.getElementById("project10Modal").style.display = "none";
+    }
+
+    // VIEW MORE ABOUT POP UP FUNCTIONALITY--------------END
+
     // DOWNLOAD PDF
     document.getElementById("openPdf").onclick = openPdf;
     function openPdf() {

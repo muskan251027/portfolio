@@ -604,6 +604,9 @@ main {
 .project9 {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9) ), url(images/project9.png);
 }
+.project10 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9) ), url(images/project10.png);
+}
 .profProjects .projectContainer .projectDesc {
     position: absolute;
     bottom: 20px;
